@@ -4,7 +4,7 @@ const db = require("quick.db");
 exports.run = async (bot, message, args) => {
 
 
-    if(message.author.id !== "671110871853826059")  return message.reply('Apenas meu criador tem permisão para usar este comando.');
+    if(message.author.id !== "671110871853826059")  return message.reply('Apenas meu criador tem permissão para usar este comando.');
     
     if (!message.member.hasPermission("ADMINISTRATOR")) {
         return message.channel.send(` ${message.author}, você tem que ter a permissão de **Administrador** para usar esse comando!`);

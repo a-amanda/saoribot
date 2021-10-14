@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
     .addFields(
         {
             name: 'Meu criador',
-            value: `Quem me programou e me desenvolveu: **! Titio Tamura#0308**`,
+            value: `Quem me programou e me desenvolveu: **! Titio Tamura#7561**`,
             
         },
         {

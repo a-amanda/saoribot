@@ -8,6 +8,7 @@ const enmap = require('enmap');
 const express = require("express");
 const fs = require("fs");
 const app = express();
+const moment = require('moment')
 
 const settings = new enmap({
   name: "settings",
@@ -90,6 +91,7 @@ bot.on("guildCreate", (guild) => {
 
   channelSend.send(`Obrigada por me adicionar em seu servidor. O meu prefixo é: **${prefix}** `);
 })
+
 
 
 bot.on('message', async message => {

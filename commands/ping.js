@@ -1,13 +1,4 @@
-/*module.exports.run = async (client, message, args) => {
-  const m = await message.channel.send(`calculando os valores para te informar o ping...\n Calcualdo latência do servidor...\n\nCalculando latência da API...`);
 
- 
-  m.edit(`🏓 **| Pong!**\nLatência do Server: **${m.createdTimestamp -
-      message.createdTimestamp}ms.**\nLatência da API: **${Math.round(
-      client.ws.ping
-    )}ms**`
-  );
-};*/
 const Discord = require("discord.js");
 const db = require("quick.db");
 

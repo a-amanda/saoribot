@@ -4,22 +4,14 @@ const config = require("./config.js");
 const { lineReply } = require('discord-reply');
 const bot = new Discord.Client({partials: ["MESSAGE", "USER", "REACTION"]});
 const {token, prefix} = require('./config.js');
-const enmap = require('enmap');
 const express = require("express");
 const fs = require("fs");
 const app = express();
 const moment = require('moment')
 
-const settings = new enmap({
-  name: "settings",
-  autoFatch: true,
-  cloneLevel: "deep",
-  fetchAll: true
-
-});
 
 
-//marcar a bot e ela responde com informações
+//marcar o bot e ela responde com informações
 bot.on("message", message => {
   if (message.author.bot) return;
   if (message.content == `<@!${bot.user.id}>` || message.content == `<@${bot.user.id}>`) {
